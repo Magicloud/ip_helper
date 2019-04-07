@@ -1,0 +1,13 @@
+[package]
+name = "ip_helper"
+version = "2019.4.3"
+authors = ["Magicloud <1886157+Magicloud@users.noreply.github.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.5"
+rayon = "1.0.3"
+
+[profile.release]
+lto = true
+panic = 'abort'
